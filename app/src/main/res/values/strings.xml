@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Client</string>
+    <string name="tab_day">Day</string>
+    <string name="tab_time">Time</string>
+
+    <string name="sunday">Chủ nhật</string>
+    <string name="monday">Thứ 2</string>
+    <string name="tuesday">Thứ 3</string>
+    <string name="wednesday">Thứ 4</string>
+    <string name="thursday">Thứ 5</string>
+    <string name="friday">Thứ 6</string>
+    <string name="saturday">Thứ 7</string>
+
+    <string-array name="days_array">
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+        <item>@string/sunday</item>
+    </string-array>
+    <string-array name="month_array">
+        <item>Tháng 1</item>
+        <item>Tháng 2</item>
+        <item>Tháng 3</item>
+        <item>Tháng 4</item>
+        <item>Tháng 5</item>
+        <item>Tháng 6</item>
+        <item>Tháng 7</item>
+        <item>Tháng 8</item>
+        <item>Tháng 9</item>
+        <item>Tháng 10</item>
+        <item>Tháng 11</item>
+        <item>Tháng 12</item>
+    </string-array>
+    <string-array name="year_array">
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+</resources>

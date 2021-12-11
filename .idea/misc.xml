@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Client/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Client/app/src/main/res/drawable-v24/ic_login_back.xml" value="0.2703125" />
+        <entry key="..\:/Client/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Client/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Client/app/src/main/res/layout/fragment_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Client/app/src/main/res/layout/fragment_staff.xml" value="0.25416666666666665" />
+        <entry key="..\:/Client/app/src/main/res/layout/item_department.xml" value="0.25416666666666665" />
+        <entry key="..\:/Client/app/src/main/res/layout/item_staff.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/drawable-v24/bg_radius_10dp.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/drawable-v24/ic_login_back.xml" value="0.36512820512820515" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/drawable/bg_button.xml" value="0.33611111111111114" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/drawable/bg_edt.xml" value="0.3646153846153846" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/drawable/bg_radius_10dp.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/drawable/bg_textview_layout.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.36512820512820515" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/drawable/ic_refresh.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/drawable/ic_search_blue.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/drawable/selector_pass.xml" value="0.33611111111111114" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/activity_add_department.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/activity_detail_department.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/activity_edit.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/activity_splash.xml" value="0.17249240121580547" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/bg_rim_2dp_radius_30dp_gray.xml" value="0.35144927536231885" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/btn_onpress_background_rim_gray_2dp.xml" value="0.35144927536231885" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/custom_tab.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/fragment_day.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/fragment_home.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/fragment_staff.xml" value="0.33" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/fragment_statistical.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/fragment_time.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/item_department.xml" value="0.33" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/item_spinner.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/item_spinner_ctbh.xml" value="0.35144927536231885" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/item_staff.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/item_student.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/onpress_bg_gray.xml" value="0.35144927536231885" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/s.xml" value="0.35144927536231885" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/slide_day_time_picker.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/layout/spinner_dialog_layoutv2.xml" value="0.35144927536231885" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/menu/item_menu.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/menu/nav_menu.xml" value="0.3546875" />
+        <entry key="..\:/Users/PHD/AndroidStudioProjects/Client/app/src/main/res/menu/toolbar_menu.xml" value="0.3546875" />
+        <entry key="..\:/nam5/SC/Final Project/Client11-12/Client/app/src/main/res/layout/fragment_statistical.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_30"
+    android:layout_marginRight="@dimen/margin_10"
+    android:layout_marginBottom="@dimen/margin_30"
+    android:background="@drawable/bg_radius_10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="Chọn CTBH"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginRight="@dimen/dp_4"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:elevation="0dp"
+                    app:srcCompat="@drawable/ic_search_blue"
+                    app:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/searchBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_btn_search"
+                    android:background="@drawable/bg_textview_layout"
+                    android:elevation="-1dp"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_btn_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:text="Tìm kiếm"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:listSelector="@drawable/onpress_bg_gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_chose_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Chọn tất cả"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/dp_17"
+            android:id="@+id/linear_unselect_all"
+            android:layout_gravity="right"
+            android:paddingVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="No all"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_refresh"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/close"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radius_10dp"
+                android:elevation="0dp"
+                android:gravity="center"
+                android:text="HỦY"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Ok"
+                android:textAllCaps="true"
+                android:textColor="@color/teal_200"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
