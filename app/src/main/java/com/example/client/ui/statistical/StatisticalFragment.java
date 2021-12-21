@@ -13,6 +13,7 @@ import com.example.client.data.model.Staff;
 import com.example.client.ui.base.BaseFragment;
 import com.example.client.ui.main.MainActivity;
 import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
@@ -54,6 +55,9 @@ public class StatisticalFragment extends BaseFragment implements StatisticalCont
         mPresenter = new StatisticalPresenter(this);
         date = new Date();
         barChart = view.findViewById(R.id.bar_chart);
+        Description ds = new Description();
+        ds.setText("Khoa");
+        barChart.setDescription(ds);
         spYear = view.findViewById(R.id.sp_year);
         spMonth = view.findViewById(R.id.sp_month);
         mDepartments = ((MainActivity) getActivity()).getmDepartments();
@@ -122,7 +126,7 @@ public class StatisticalFragment extends BaseFragment implements StatisticalCont
             public String getFormattedValue(float value) {
 //                if (((int) value) == 0)
 //                    return "";
-                return ((int) value) + "";
+                return  "";
             }
         });
         barChart.getAxisRight().setValueFormatter(new ValueFormatter() {

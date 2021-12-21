@@ -28,7 +28,6 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:fontFamily="@font/poppinsbold"
-                android:text="Trường đại học XXX"
                 android:textSize="25sp" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -37,7 +36,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
-                android:hint="Mã sinh viên">
+                android:hint="Mã thẻ">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/text_username"

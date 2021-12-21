@@ -54,7 +54,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationView.O
         switch (menuItem.getItemId()) {
             case R.id.action_home:
                 mCurrentPosition = 0;
-                toolbar.setTitle("Ds phòng ban");
+                toolbar.setTitle("Danh sách phòng ban");
                 replaceFragment(getSupportFragmentManager(), HomeFragment.newInstance());
                 break;
             case R.id.action_profile:
@@ -65,7 +65,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationView.O
                 break;
             case R.id.action_:
                 mCurrentPosition = 2;
-                toolbar.setTitle("Biểu đồ sv đi muộn");
+                toolbar.setTitle("Thống kê đi muộn");
                 replaceFragment(getSupportFragmentManager(),
                         StatisticalFragment.newInstance((Staff) getIntent().
                                 getSerializableExtra("user")));

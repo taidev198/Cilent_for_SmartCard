@@ -117,6 +117,11 @@ public class LoginActivity extends BaseActivity implements LoginContract.View,
             Toast.makeText(this, "Vui lòng nhập tên đăng nhập!", Toast.LENGTH_SHORT).show();
             return false;
         }
+        if (!mUsername.getText().toString().equals("admin")) {
+            Toast.makeText(this, "Sai tên đăng nhập!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
         if (!pattern.matcher(mUsername.getText().toString()).matches()) {
             Toast.makeText(this, "Tên đăng nhập chưa đúng định dạng!", Toast.LENGTH_SHORT).show();
             return false;
