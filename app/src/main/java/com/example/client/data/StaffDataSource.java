@@ -1,6 +1,8 @@
 package com.example.client.data;
 
+import com.example.client.data.model.Admin;
 import com.example.client.data.model.Staff;
+import com.example.client.data.response.AdminResponse;
 import com.example.client.data.response.StaffResponse;
 import com.example.client.data.response.StaffsResponse;
 
@@ -10,5 +12,5 @@ public interface StaffDataSource {
 
     Call<StaffsResponse> getStaffs(int id);
 
-    Call<StaffResponse> login(Staff staff);
+    Call<AdminResponse> login(Admin Admin);
 }

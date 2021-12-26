@@ -1,8 +1,10 @@
 package com.example.client.data.api;
 
+import com.example.client.data.model.Admin;
 import com.example.client.data.model.Department;
 import com.example.client.data.model.Rule;
 import com.example.client.data.model.Staff;
+import com.example.client.data.response.AdminResponse;
 import com.example.client.data.response.DepartmentResponse;
 import com.example.client.data.response.RuleResponse;
 import com.example.client.data.response.StaffResponse;
@@ -26,8 +28,8 @@ public interface ApiClient {
     @POST("user/department/get/")
     Call<StaffsResponse> getStaffs(@Field("id") int id);
 
-    @POST("user/login")
-    Call<StaffResponse> login(@Body Staff staff);
+    @POST("user/login/admin")
+    Call<AdminResponse> login(@Body Admin admin);
 
     @POST("department/add")
     Call<DepartmentResponse> addDepartments(@Body Department department);

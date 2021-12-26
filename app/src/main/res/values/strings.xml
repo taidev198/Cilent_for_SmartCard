@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Client</string>
+    <string name="app_name">Quản Lý</string>
     <string name="tab_day">Day</string>
     <string name="tab_time">Time</string>
 

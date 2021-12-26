@@ -8,7 +8,9 @@ import com.example.client.data.StaffRemoteDataSource;
 import com.example.client.data.StaffRepository;
 import com.example.client.data.api.ApiClient;
 import com.example.client.data.api.UtilsApi;
+import com.example.client.data.model.Admin;
 import com.example.client.data.model.Staff;
+import com.example.client.data.response.AdminResponse;
 import com.example.client.data.response.DepartmentResponse;
 import com.example.client.data.response.StaffResponse;
 
@@ -29,19 +31,19 @@ public class LoginPresenter implements LoginContract.Presenter {
     }
 
     @Override
-    public void doLogin(Staff staff) {
+    public void doLogin(Admin admin) {
         StaffRepository.
                 getInstance(StaffRemoteDataSource.
                 getInstance())
-                .login(staff)
-                .enqueue(new Callback<StaffResponse>() {
+                .login(admin)
+                .enqueue(new Callback<AdminResponse>() {
                     @Override
-                    public void onResponse(Call<StaffResponse> call, Response<StaffResponse> response) {
+                    public void onResponse(Call<AdminResponse> call, Response<AdminResponse> response) {
                         mView.onLoginSuccess(response.body());
                     }
 
                     @Override
-                    public void onFailure(Call<StaffResponse> call, Throwable t) {
+                    public void onFailure(Call<AdminResponse> call, Throwable t) {
                         t.printStackTrace();
                     }
                 });

@@ -8,6 +8,7 @@ import android.widget.Spinner;
 import androidx.fragment.app.Fragment;
 
 import com.example.client.R;
+import com.example.client.data.model.Admin;
 import com.example.client.data.model.Department;
 import com.example.client.data.model.Staff;
 import com.example.client.ui.base.BaseFragment;
@@ -27,7 +28,7 @@ import java.util.List;
 
 
 public class StatisticalFragment extends BaseFragment implements StatisticalContract.View {
-    private static Staff mUser;
+    private static Admin mAdmin;
     private StatisticalPresenter mPresenter;
     BarChart barChart;
     List<Department> mDepartments;
@@ -40,8 +41,8 @@ public class StatisticalFragment extends BaseFragment implements StatisticalCont
     List<Staff> mStaff = new ArrayList<>();
     private int xy = 0;
 
-    public static Fragment newInstance(Staff user) {
-        mUser = user;
+    public static Fragment newInstance() {
+
         return new StatisticalFragment();
     }
 

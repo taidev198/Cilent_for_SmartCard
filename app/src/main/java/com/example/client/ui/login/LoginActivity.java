@@ -10,8 +10,10 @@ import android.widget.Toast;
 import com.example.client.R;
 import com.example.client.data.StaffRemoteDataSource;
 import com.example.client.data.StaffRepository;
+import com.example.client.data.model.Admin;
 import com.example.client.data.model.Department;
 import com.example.client.data.model.Staff;
+import com.example.client.data.response.AdminResponse;
 import com.example.client.data.response.DepartmentResponse;
 import com.example.client.data.response.StaffResponse;
 import com.example.client.ui.base.BaseActivity;
@@ -34,7 +36,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View,
     private Pattern patternPass;
     private final String USERNAME_PATTERN = "^[A-Z0-9]*$";
     private final String PASS_PATTERN = "^[a-zA-Z1-9]{6,8}$";
-    private Staff mStaff;
+    private Admin admin;
     private CheckBox cbRemember;
 
     @Override
@@ -64,11 +66,11 @@ public class LoginActivity extends BaseActivity implements LoginContract.View,
     }
 
     @Override
-    public void onLoginSuccess(StaffResponse staff) {
+    public void onLoginSuccess(AdminResponse staff) {
         if (staff.getMessage().equals("login sucessfully")) {
             mPresenter.getDepartment();
-            mStaff = staff.getStaff();
-        } else System.out.println("bugs");
+            admin = staff.getAdmin();
+        } else Toast.makeText(this, "Tài khoản hoặc mật khẩu không chính xác", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -79,20 +81,20 @@ public class LoginActivity extends BaseActivity implements LoginContract.View,
 
     @Override
     public void onGetDepartmentSuccess(DepartmentResponse departmentResponse) {
-        for (Department department : departmentResponse.getDepartments()) {
-            if (department.getMid() == mStaff.getIdDepartment()) {
-                mStaff.setDepartment(department.getName());
-                break;
-            }
-        }
+//        for (Department department : departmentResponse.getDepartments()) {
+//            if (department.getMid() == mStaff.getIdDepartment()) {
+//                mStaff.setDepartment(department.getName());
+//                break;
+//            }
+//        }
         Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, MainActivity.class);
         //To pass:
         if (cbRemember.isChecked()){
             SharedPreferences preferences = getSharedPreferences("SHARE", MODE_PRIVATE);
-            preferences.edit().putString("user", new Gson().toJson(mStaff)).apply();
+            preferences.edit().putString("user", new Gson().toJson(admin)).apply();
         }
-        intent.putExtra("user", mStaff);
+        intent.putExtra("user", admin);
         startActivity(intent);
         finish();
     }
@@ -101,13 +103,10 @@ public class LoginActivity extends BaseActivity implements LoginContract.View,
     public void onClick(View view) {
         if (R.id.btn_login == view.getId()) {
             if (validateLogin()) {
-                Staff staff = new Staff();
-               // staff.setFullname("fsfsadf");
-               // staff.setIdDepartment(0);
-               // staff.setPassword("12345");
-                staff.setId(mUsername.getText().toString());
-                staff.setPassword(mPass.getText().toString());
-                mPresenter.doLogin(staff);
+                Admin ad = new Admin();
+                ad.setUsername(mUsername.getText().toString());
+                ad.setPassword(mPass.getText().toString());
+                mPresenter.doLogin(ad);
             }
         }
     }
@@ -122,10 +121,10 @@ public class LoginActivity extends BaseActivity implements LoginContract.View,
             return false;
         }
 
-        if (!pattern.matcher(mUsername.getText().toString()).matches()) {
-            Toast.makeText(this, "Tên đăng nhập chưa đúng định dạng!", Toast.LENGTH_SHORT).show();
-            return false;
-        }
+//        if (!pattern.matcher(mUsername.getText().toString()).matches()) {
+//            Toast.makeText(this, "Tên đăng nhập chưa đúng định dạng!", Toast.LENGTH_SHORT).show();
+//            return false;
+//        }
         if (mPass.getText().toString().isEmpty()) {
             Toast.makeText(this, "Vui lòng nhập mật khẩu!", Toast.LENGTH_SHORT).show();
             return false;

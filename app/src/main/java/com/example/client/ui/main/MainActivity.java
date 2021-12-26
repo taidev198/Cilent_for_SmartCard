@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.client.R;
+import com.example.client.data.model.Admin;
 import com.example.client.data.model.Department;
 import com.example.client.data.model.Staff;
 import com.example.client.ui.base.BaseActivity;
@@ -67,8 +68,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationView.O
                 mCurrentPosition = 2;
                 toolbar.setTitle("Thống kê đi muộn");
                 replaceFragment(getSupportFragmentManager(),
-                        StatisticalFragment.newInstance((Staff) getIntent().
-                                getSerializableExtra("user")));
+                        StatisticalFragment.newInstance());
                 break;
         }
         return true;
